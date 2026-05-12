@@ -3,49 +3,49 @@ const websites = [
   {
     title: "BitcyClub",
     description: "Bitcy.club is a platform where users play games to win rewards.",
-    image: "bitcyclub.png",
+    image: "/images/bitcyclub.png",
     link: "https://bitcy.club/"
   },
   {
     title: "Buckster",
     description: "Buckster is a merchant-driven platform where users play trivia games to win real rewards.",
-    image: "buckster.png",
+    image: "/images/buckster.png",
     link: "https://buckster.ca/"
   },
     {
     title: "Lofty Auto Export",
     description: "Lofty Auto Exports facilitates international car trading and export logistics.",
-    image: "lofty.png",
+    image: "/images/lofty.png",
     link: "https://loftyautoexports.com/"
   },
   {
     title: "Bitcyllionaire",
     description: "Bitcyllionaire helps users earn event tickets through BitcyClub rewards.",
-    image: "bitcyllionaire.png",
+    image: "/images/bitcyllionaire.png",
     link: "https://www.bitcyllionaire.com/"
   },
     {
     title: "Green Habitat",
     description: "Green Habitat Initiative promotes environmental sustainability and climate action in Nigeria.",
-    image: "greenhabitat.png",
+    image: "/images/greenhabitat.png",
     link: "https://www.greenhabitat.ng/"
   },
       {
     title: "Dave Asprey",
     description: "Dave Asprey is a biohacking entrepreneur and founder of Bulletproof Coffee.",
-    image: "dave.png",
+    image: "/images/dave.png",
     link: "https://daveasprey.com/"
   },
       {
     title: "Bencita Boutique",
     description: "Bencita Boutique is an online fashion store offering trendy women’s clothing and accessories.",
-    image: "bencita.png",
+    image: "/images/bencita.png",
     link: "https://darksalmon-armadillo-469250.hostingersite.com/"
   },
       {
     title: "Zesty Paw",
     description: "Zesty Paws is a pet wellness brand that makes science-based supplements for dogs and cats..",
-    image: "zesty.png",
+    image: "/images/zesty.png",
     link: "https://zestypaws.com/"
   }
 ];
