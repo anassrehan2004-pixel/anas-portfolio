@@ -15,7 +15,7 @@ const websites = [
     {
     title: "Lofty Auto Export",
     description: "Lofty Auto Exports facilitates international car trading and export logistics.",
-    image: "images/lofty.PNG",
+    image: "images/Lofty.PNG",
     link: "https://loftyautoexports.com/"
   },
   {
