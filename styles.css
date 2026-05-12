@@ -342,7 +342,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border);
-  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;
+  display: flex; flex-wrap: wrap; justify-content:center; gap: 1rem;
   color: var(--muted-fg);
   font-size: 0.875rem;
 }
