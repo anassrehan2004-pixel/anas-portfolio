@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Chen - Full-Stack Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply theme BEFORE page renders to avoid flash
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+  </script>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="Main navigation">
+    <div class="sidebar-logo">AR</div>
+    <nav class="sidebar-nav">
+      <a href="#home" class="nav-link" data-section="home" title="Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5h-2v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="#work" class="nav-link" data-section="work" title="Websites">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="nav-label">Websites</span>
+      </a>
+      <a href="#contact" class="nav-link" data-section="contact" title="Contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span class="nav-label">Contact</span>
+      </a>
+    </nav>
+    <div class="sidebar-divider"></div>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </aside>
+
+  <!-- MOBILE TOP BAR -->
+  <header class="mobile-bar">
+    <div class="sidebar-logo">AC</div>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div id="mobile-drawer" class="mobile-drawer" hidden>
+    <a href="#home" class="drawer-link">Home</a>
+    <a href="#work" class="drawer-link">Websites</a>
+    <a href="#contact" class="drawer-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-video-wrap">
+        <video autoplay muted loop playsinline preload="auto"
+          poster="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80">
+          <source src="bg.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1>Anas Rehan<br /><span class="text-gradient">Full-Stack Engineer.</span></h1>
+        <p class="hero-sub">I build polished, high-performance web applications and mobile experiences. Obsessed with the details, focused on shipping.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in touch <span>→</span></a>
+          <a href="#work" class="btn btn-ghost">View work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEBSITES -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Websites</p>
+          <h2>Some work.</h2>
+        </div>
+        <div class="horizontal-scroll-wrapper">
+          <div id="websites-grid" class="horizontal-scroll"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container container-narrow">
+        <p class="eyebrow">Contact</p>
+        <h2 class="contact-title">Let's build something.</h2>
+        <p class="contact-sub">Open to freelance projects, collaborations, and full-time roles.</p>
+<a href="mailto:anasssrehan2004@gmail.com" class="contact-email">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+  </svg>
+  anasssrehan2004@gmail.com
+</a>
+        <footer class="footer">
+          <p>© <span id="year"></span> Alex Chen. All rights reserved.</p>
+          <p class="mono">Built with care.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
