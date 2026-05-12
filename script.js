@@ -3,7 +3,7 @@ const websites = [
   {
     title: "BitcyClub",
     description: "Bitcy.club is a platform where users play games to win rewards.",
-    image: "images/bitcyclub.png",
+    image: "images/bitcyclub.PNG",
     link: "https://bitcy.club/"
   },
   {
